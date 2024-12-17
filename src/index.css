@@ -77,7 +77,6 @@ code {
   left: 10%;
   transform: translate(-10%, -50%);
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.897);
 }
 .cta-button {
   padding: 10px 20px;
@@ -86,6 +85,9 @@ code {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.carousel-content p{
+  font-weight: 900;
 }
 .carousel-content h1,
 .carousel-content h2{
@@ -96,6 +98,7 @@ code {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-shadow: 12px 10px 5px rgba(0, 0, 0, 0.897);
 }
 .carousel-content h2{
   color: #3BADCA;
@@ -539,4 +542,75 @@ section .duracion{
   .claims img {
     max-width: 150px;
   }
+}
+/*Estilo de Comentarios*/
+.comentarios {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.comentarios h2 {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 50px;
+  text-decoration-skip-ink: none;
+  color: #72CE8E;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.897);
+  transition: color 0.3s ease;
+  padding-left: 30px;
+}
+
+.comentarios-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.comentarios-item {
+    background: #ebebebcc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+.comentarios-item {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.comentarios-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.comentarios-item p {
+  margin-top: 0;
+}
+
+.comentarios-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.comentarios-header h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+.comentarios-header .rating {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #40ce80;
+  white-space: nowrap;
 }

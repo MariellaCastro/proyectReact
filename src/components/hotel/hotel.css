@@ -13,14 +13,14 @@
 }
 
 .header h1 {
-    font-size: 2rem;
-    color: #00ffcc;
+    font-size: 38px;
+    color: #72CE8E;
     font-weight: bold;
     text-align: center;
     font-weight: 900;
     transition: color 0.3s ease;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.897);
+    line-height: 50px;
 }
 
 .header p {
@@ -42,13 +42,13 @@
 .rooms h2,
 .services h2,
 .testimonials h2 {
-    color: #00ffcc;
+    color: #72CE8E;
     font-weight: bold;
     text-align: center;
     font-weight: 900;
     transition: color 0.3s ease;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.897);
+    font-size: 38px;
 }
 
 .service-grid,
@@ -64,7 +64,7 @@
     background: #ebebebcc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2897);
     max-width: 300px;
     text-align: center;
     display: flex;
@@ -171,45 +171,68 @@
         font-size: 18px;
     }
 }
-
-.service-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-
-}
-
-.service-item {
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+.rating-section {
     text-align: center;
+    padding: 40px 20px;
+    color: #b1b1b1;
+    font-family: Arial, sans-serif;
+}
+.rating-score {
+    font-size: 4.8rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.rating-highlight {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.rating-description {
+    color: #dddddd;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.rating-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+.rating-section .score{
+    width: 250px;
+    height: auto; 
+    position: absolute;
+    transform: translate(-50%, -79%);
+}
+.rating-item {
     display: flex;
     flex-direction: column;
-    height: 170px;
-    width: 250px;
-    top: 45px;
-    left: 1051px;
-    padding: 29px 43px;
-    border-radius: 15px;
-    background: #EBEBEB;
-}
-
-.service-grid img {
-    height: 96px;
-}
-
-.service-grid p {
-    font-family: Patrick Hand SC;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
+    justify-content: center;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 120px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    transition: color 0.3s ease;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    color: #000000;
+}
+.rating-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.rating-score-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
 }
 
+.rating-grid img {
+    height: 50px;
+}
 /*Estilo de Testimonio*/
 .testimonial-item {
     display: flex;

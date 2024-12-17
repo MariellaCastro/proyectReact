@@ -17,7 +17,6 @@ export const Testimonios = () => {
 
   return (
     <section className="testimonials">
-      <h2>RESULTADOS QUE HABLAN POR SÍ MISMOS</h2>
       <div className="testimonial-grid">
         {testimonials.map((testimonial, index) => (
           <div className="testimonial-item" key={index}>
